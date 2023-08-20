@@ -163,6 +163,17 @@ body {
 }
 
 
+.top-nav__menu-list > li > a:hover{
+    padding: 5px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-left: 1.5rem;
+    color: #02061f;
+    
+}
+
 .top-nav__logo {
     width: 50px;
     height: 50px;
@@ -259,3 +270,20 @@ body {
     font-size: 4rem;
 }
 
+.content {
+    background-color: #c3bfbf;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content--container {
+    width: 80%;
+    height: 100vh;
+    background-color: white;
+}
+
+.content--container h1 {
+    text-align: center;
+    margin-top: 3rem;
+}
