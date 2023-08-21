@@ -287,3 +287,8 @@ body {
     text-align: center;
     margin-top: 3rem;
 }
+
+.item img {
+    position: relative;
+    left: 15rem;
+}
