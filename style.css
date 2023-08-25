@@ -30,20 +30,22 @@ body {
 .top-bar__row {
     width: 100%;
     height: 2rem;
-
     display: inline-flex;
-    position: relative;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    /* position: relative; */
 }
 
 .social-list-col {
+
     width: 80%;
     height: 2rem;
 
     /* margin-left: 5rem; */
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    /* position: absolute;; */
+    /* top: 50%; */
+    /* left: 50%; */
+    /* transform: translate(-50%, -50%); */
 }
 
 .light-mode-col {
@@ -52,31 +54,48 @@ body {
     height: 2rem;
     
     /* margin-left: 95rem; */
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    /* position: absolute; */
+    /* top: 50%; */
+    /* left: 50%; */
+    /* transform: translate(-50%, -50%); */
 }
 
 .top-bar__social-list {
     height: 2rem;
-    display: flex;
-    flex-flow: row nowrap;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
     align-items: center;
-    padding: 0;
-    margin: 0;
     list-style-type: none;
+
 }
 
 
-.top-bar__social-list > li{
+.top-bar__social-list li{
     height: 2rem;
+    /* list-style-type: none; */
 }
 
-.top-bar__social-list > li > a{
+.top-bar__social-list li > a {
+    display:flex;
     height: 2rem;
+    text-decoration: none;
+    align-items: center;
 }
 
+.top-bar__social-list li a i{
+    height: 2rem;
+    vertical-align: middle;
+}
+
+/* .light-mode-col > i{ */
+    /* height: 2rem; */
+/* } */
+/* i.bx bxl-facebook-square {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
 
 
 
@@ -270,6 +289,8 @@ body {
     font-size: 4rem;
 }
 
+/* MAIN  */
+
 .content {
     background-color: #c3bfbf;
     display: flex;
@@ -281,18 +302,66 @@ body {
     width: 80%;
     /* height: 100vh; */
     background-color: white;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .content--container h1 {
     text-align: center;
     margin-top: 3rem;
+    margin-bottom: 3rem;
+    
 }
 
-.item img {
-    position: relative;
-    left: 15rem;
+.login-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 30rem;
+    height: 40rem;
+    background-color: #abeaa5;
+    margin-bottom: 5rem;
+    border-radius: 20px;
+    padding: 2rem;
 }
 
+.login-card h1 {
+    height: 20%;
+    margin-top: 5rem;
+    text-align: center;
+    font-size: 3rem;
+}
+
+.login-card--type-info {
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5rem;
+}
+
+.login-card--type-info label {
+    font-size: 1.5rem;
+    color: #02061f;
+}
+
+.login-card--type-info input {
+    border-radius: 3px;
+    border: 2px solid #02061f;
+}
+
+
+
+.login-button {
+    width: 10rem;
+    height: 3rem;
+    background-color: #a92410;
+    border-radius: 10px;
+    font-weight: bold;
+    color: white;
+}
 
 /* FOOTER STYLE */
 footer {
